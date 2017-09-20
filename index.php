@@ -7,6 +7,7 @@
 	$filename = 'index';
 
 	if(array_key_exists('PATH_INFO', $_SERVER)){
+		// console.log(1);
 		$path = $_SERVER['PATH_INFO'];
 		$str = substr($path, 1);
 		$ret = explode('/', $str);
